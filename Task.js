@@ -11,6 +11,7 @@ const pool = mysql.createPool({
     user: "root",
     password: 'TbEPX5wsZtOiTZESroSF',
     port: "7554",
+    protocol : "TCP",
     database: "db"
 })
 
