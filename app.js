@@ -50,8 +50,7 @@ app.use(function (req, res, next) {
 		user: "root",
 		password: 'TbEPX5wsZtOiTZESroSF',
 		port: "7554",
-		protocol : "TCP",
-		database: "db"
+		database: "railway"
 	});
 	res.locals.connect();
 	next();
