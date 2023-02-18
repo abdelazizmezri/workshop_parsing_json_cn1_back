@@ -7,9 +7,10 @@ const router = express.Router();
 
 const pool = mysql.createPool({
     connectionLimit: 10,
-    host: "containers-us-west-171.railway.app:7554/railway",
+    host: "containers-us-west-171.railway.app",
     user: "root",
     password: 'TbEPX5wsZtOiTZESroSF',
+    port: "7554",
     database: "db"
 })
 
