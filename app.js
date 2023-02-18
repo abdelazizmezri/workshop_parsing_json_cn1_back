@@ -46,9 +46,9 @@ app.use(function (err, req, res, next) {
 
 app.use(function (req, res, next) {
 	res.locals.connection = mysql.createConnection({
-		host: 'db',
+		host: 'mysql://root:TbEPX5wsZtOiTZESroSF@containers-us-west-171.railway.app:7554/railway',
 		user: 'root',
-		password: 'root',
+		password: 'TbEPX5wsZtOiTZESroSF',
 		database: 'db'
 	});
 	res.locals.connect();
