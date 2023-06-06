@@ -46,11 +46,10 @@ app.use(function (err, req, res, next) {
 
 app.use(function (req, res, next) {
 	res.locals.connection = mysql.createConnection({
-		host: "containers-us-west-135.railway.app",
+		host: "db",
 		user: "root",
-		password: 'PKfnDq50raC5CzLLx1EF',
-		port: "6453",
-		database: "railway"
+		password: "root",
+		database: "db"
 	});
 	res.locals.connect();
 	next();
